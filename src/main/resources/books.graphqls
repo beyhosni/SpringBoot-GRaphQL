@@ -1,0 +1,17 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    allBooks: [Book]
+    book(id: String): Book
+}
+
+type Mutation {
+    isn: String
+    title: String
+    publisher: String
+    authors: [String]
+    publishedDate: String
+}
